@@ -30,7 +30,7 @@
     <title>History - Magic Bullets by chocolateftd</title>
   </head>
 
-  <body>
+  <body onload="main">
 
     <div class="shell">
 
@@ -120,7 +120,10 @@
 
     <script src="https://rawgit.com/matthieua/WOW/master/dist/wow.min.js"></script>
     <script>
-      new WOW.init();
+      function main() {
+      var wow = new WOW();
+      wow.init();
+      }
     </script>
   </body>
 </html>
